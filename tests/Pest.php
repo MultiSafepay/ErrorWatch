@@ -1,5 +1,5 @@
 <?php
 
-use ModularTemplate\ModularTemplate\Tests\TestCase;
+use MultiSafepayErrorWatch\MultiSafepayErrorWatch\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

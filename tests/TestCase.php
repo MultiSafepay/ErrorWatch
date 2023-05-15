@@ -1,10 +1,10 @@
 <?php
 
-namespace ModularTemplate\ModularTemplate\Tests;
+namespace MultiSafepayErrorWatch\MultiSafepayErrorWatch\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use ModularTemplate\ModularTemplate\ModularTemplateServiceProvider;
+use MultiSafepayErrorWatch\MultiSafepayErrorWatch\MultiSafepayErrorWatchServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,14 +13,14 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'ModularTemplate\\ModularTemplate\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'MultiSafepayErrorWatch\\MultiSafepayErrorWatch\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            ModularTemplateServiceProvider::class,
+            MultiSafepayErrorWatchServiceProvider::class,
         ];
     }
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace ModularTemplate\ModularTemplate\Commands;
+namespace MultiSafepayErrorWatch\MultiSafepayErrorWatch\Commands;
 
 use Illuminate\Console\Command;
 
-class ModularTemplateCommand extends Command
+class MultiSafepayErrorWatchCommand extends Command
 {
     public $signature = 'modular-middleware-template';
 

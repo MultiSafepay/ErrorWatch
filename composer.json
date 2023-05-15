@@ -1,12 +1,12 @@
 {
-    "name": "multisafepay/modular-middleware-template",
+    "name": "multisafepay/error-watch",
     "description": "A package for modular middleware",
     "keywords": [
-        "modular-template",
+        "multisafepay-error-watch",
         "laravel",
-        "modular-middleware-template"
+        "modular-middleware"
     ],
-    "homepage": "https://github.com/multisafepay/modular-middleware-template",
+    "homepage": "https://github.com/multisafepay/error-watch",
     "license": "MIT",
     "authors": [
         {
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "ModularTemplate\\ModularTemplate\\": "src",
-            "ModularTemplate\\ModularTemplate\\Database\\Factories\\": "database/factories"
+            "MultiSafepayErrorWatch\\MultiSafepayErrorWatch\\": "src",
+            "MultiSafepayErrorWatch\\MultiSafepayErrorWatch\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ModularTemplate\\ModularTemplate\\Tests\\": "tests"
+            "MultiSafepayErrorWatch\\MultiSafepayErrorWatch\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -51,10 +51,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ModularTemplate\\ModularTemplate\\ModularTemplateServiceProvider"
+                "MultiSafepayErrorWatch\\MultiSafepayErrorWatch\\MultiSafepayErrorWatchServiceProvider"
             ],
             "aliases": {
-                "ModularTemplate": "ModularTemplate\\ModularTemplate\\Facades\\ModularTemplate"
+                "MultiSafepayErrorWatch": "MultiSafepayErrorWatch\\MultiSafepayErrorWatch\\Facades\\MultiSafepayErrorWatch"
             }
         }
     },
@@ -62,7 +62,7 @@
     "prefer-stable": true,
     "repositories": [
         {
-            "url": "git@github.com:MultiSafepay/modular-middleware-multisafepay.git",
+            "url": "git@github.com:MultiSafepay/error-watch.git",
             "type": "git"
         }
     ]
