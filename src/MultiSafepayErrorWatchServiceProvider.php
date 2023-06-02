@@ -14,7 +14,7 @@ class MultiSafepayErrorWatchServiceProvider extends PackageServiceProvider
     public function boot(): void
     {
         //Load Custom routes into laravel
-        $this->loadRoutesFrom(__DIR__ . '/routes/template.php');
+        $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
     }
 
     public function configurePackage(Package $package): void
