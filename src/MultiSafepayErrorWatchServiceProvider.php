@@ -22,11 +22,14 @@ class MultiSafepayErrorWatchServiceProvider extends PackageServiceProvider
         //Publish the required files
         $this->publishes([
             //Config
-            __DIR__.'/../config/template.php' => config_path('template.php'),
+            __DIR__.'/../config/errorwatch.php' => config_path('errorwatch.php'),
+            //Images
+            __DIR__.'/../resources/images/warring-icon.svg' => public_path('images/error-watch/warring-icon.svg'),
             //Blades
-            __DIR__.'/../resources/views/preference.blade.php' => resource_path('views/template/preference.blade.php'),
+            __DIR__.'/../resources/views/base.blade.php' => resource_path('views/error-watch/base.blade.php'),
+            __DIR__.'/../resources/views/dashboard.blade.php' => resource_path('views/error-watch/dashboard.blade.php'),
         ], 'modular-middleware');
 
-        $package->name('modular-middleware-error-watch');
+        $package->name('error-watch');
     }
 }
